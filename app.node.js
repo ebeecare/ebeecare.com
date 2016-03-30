@@ -8818,7 +8818,6 @@ module.exports =
       key: 'render',
       value: function render() {
         var accountLink;
-        console.log(_coreUtil2['default'].getCookies());
         if (_coreUtil2['default'].getCookies()['sessionid']) {
           accountLink = _react2['default'].createElement(
             'li',
