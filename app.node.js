@@ -10681,6 +10681,7 @@ module.exports =
     _createClass(_default, [{
       key: 'render',
       value: function render() {
+        console.log(typeof document !== 'undefined' && document.cookie);
         return _react2['default'].createElement(
           'div',
           null,
