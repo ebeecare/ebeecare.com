@@ -396,7 +396,10 @@ module.exports =
 
         if (allowTransition) {
           var link = event.currentTarget;
-          _coreLocation2['default'].pushState(_this.props && _this.props.state || null, _this.props && _this.props.to || link.pathname + link.search);
+          _coreLocation2['default'].push({
+            pathname: _this.props && _this.props.to || link.pathname + link.search,
+            state: _this.props && _this.props.state || null
+          });
         }
       },
       enumerable: true
