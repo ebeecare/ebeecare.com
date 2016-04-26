@@ -250,63 +250,6 @@ module.exports =
     value: true
   });
 
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  __webpack_require__(109);
-
-  var Container = (function (_Component) {
-    _inherits(Container, _Component);
-
-    function Container() {
-      _classCallCheck(this, Container);
-
-      _get(Object.getPrototypeOf(Container.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(Container, [{
-      key: 'render',
-
-      // static propTypes = {
-      //   children: PropTypes.element.isRequired,
-      // };
-
-      value: function render() {
-        return _react2['default'].createElement(
-          'div',
-          { className: 'Container' },
-          this.props.children
-        );
-      }
-    }]);
-
-    return Container;
-  })(_react.Component);
-
-  exports['default'] = Container;
-  module.exports = exports['default'];
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
   var _this = this;
 
   var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -409,6 +352,63 @@ module.exports =
   })(_react.Component);
 
   exports['default'] = Link;
+  module.exports = exports['default'];
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  __webpack_require__(109);
+
+  var Container = (function (_Component) {
+    _inherits(Container, _Component);
+
+    function Container() {
+      _classCallCheck(this, Container);
+
+      _get(Object.getPrototypeOf(Container.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(Container, [{
+      key: 'render',
+
+      // static propTypes = {
+      //   children: PropTypes.element.isRequired,
+      // };
+
+      value: function render() {
+        return _react2['default'].createElement(
+          'div',
+          { className: 'Container' },
+          this.props.children
+        );
+      }
+    }]);
+
+    return Container;
+  })(_react.Component);
+
+  exports['default'] = Container;
   module.exports = exports['default'];
 
 /***/ },
@@ -672,6 +672,12 @@ module.exports =
 
 /***/ },
 /* 10 */
+/***/ function(module, exports) {
+
+  module.exports = require("classnames");
+
+/***/ },
+/* 11 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -760,12 +766,6 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 11 */
-/***/ function(module, exports) {
-
-  module.exports = require("classnames");
-
-/***/ },
 /* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -795,7 +795,7 @@ module.exports =
 
   __webpack_require__(86);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
@@ -1207,7 +1207,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _classnames = __webpack_require__(11);
+  var _classnames = __webpack_require__(10);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -1622,15 +1622,15 @@ module.exports =
 
   __webpack_require__(82);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
-  var _AlertPopup = __webpack_require__(10);
+  var _AlertPopup = __webpack_require__(11);
 
   var _AlertPopup2 = _interopRequireDefault(_AlertPopup);
 
@@ -1934,7 +1934,7 @@ module.exports =
 
   __webpack_require__(118);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -1942,7 +1942,7 @@ module.exports =
 
   var _Popup2 = _interopRequireDefault(_Popup);
 
-  var _AlertPopup = __webpack_require__(10);
+  var _AlertPopup = __webpack_require__(11);
 
   var _AlertPopup2 = _interopRequireDefault(_AlertPopup);
 
@@ -2143,7 +2143,7 @@ module.exports =
 
   __webpack_require__(121);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -2463,11 +2463,11 @@ module.exports =
 
   __webpack_require__(83);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -2637,7 +2637,7 @@ module.exports =
 
   __webpack_require__(85);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -2722,7 +2722,7 @@ module.exports =
 
   var _superagent2 = _interopRequireDefault(_superagent);
 
-  var _classnames = __webpack_require__(11);
+  var _classnames = __webpack_require__(10);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -2744,11 +2744,11 @@ module.exports =
 
   __webpack_require__(87);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
-  var _AlertPopup = __webpack_require__(10);
+  var _AlertPopup = __webpack_require__(11);
 
   var _AlertPopup2 = _interopRequireDefault(_AlertPopup);
 
@@ -3008,11 +3008,11 @@ module.exports =
 
   __webpack_require__(88);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -3399,11 +3399,11 @@ module.exports =
 
   __webpack_require__(89);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -4127,7 +4127,7 @@ module.exports =
 
   __webpack_require__(90);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -4250,11 +4250,11 @@ module.exports =
 
   __webpack_require__(91);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
-  var _AlertPopup = __webpack_require__(10);
+  var _AlertPopup = __webpack_require__(11);
 
   var _AlertPopup2 = _interopRequireDefault(_AlertPopup);
 
@@ -4423,11 +4423,11 @@ module.exports =
 
   __webpack_require__(92);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -4512,13 +4512,13 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _classnames = __webpack_require__(11);
+  var _classnames = __webpack_require__(10);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
   __webpack_require__(93);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -4620,11 +4620,11 @@ module.exports =
 
   __webpack_require__(94);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -5607,11 +5607,11 @@ module.exports =
 
   __webpack_require__(95);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -5619,7 +5619,7 @@ module.exports =
 
   var _LoginPopup2 = _interopRequireDefault(_LoginPopup);
 
-  var _AlertPopup = __webpack_require__(10);
+  var _AlertPopup = __webpack_require__(11);
 
   var _AlertPopup2 = _interopRequireDefault(_AlertPopup);
 
@@ -6002,7 +6002,7 @@ module.exports =
 
   var _superagent2 = _interopRequireDefault(_superagent);
 
-  var _classnames = __webpack_require__(11);
+  var _classnames = __webpack_require__(10);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -6020,15 +6020,15 @@ module.exports =
 
   __webpack_require__(96);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
-  var _AlertPopup = __webpack_require__(10);
+  var _AlertPopup = __webpack_require__(11);
 
   var _AlertPopup2 = _interopRequireDefault(_AlertPopup);
 
@@ -6944,7 +6944,7 @@ module.exports =
 
   __webpack_require__(97);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
@@ -7012,13 +7012,13 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _classnames = __webpack_require__(11);
+  var _classnames = __webpack_require__(10);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
   __webpack_require__(98);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -7110,17 +7110,17 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _classnames = __webpack_require__(11);
+  var _classnames = __webpack_require__(10);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
   __webpack_require__(99);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -7269,7 +7269,7 @@ module.exports =
 
   __webpack_require__(100);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -7487,11 +7487,11 @@ module.exports =
 
   __webpack_require__(101);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -7655,17 +7655,17 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _classnames = __webpack_require__(11);
+  var _classnames = __webpack_require__(10);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
   __webpack_require__(102);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -7944,11 +7944,11 @@ module.exports =
 
   __webpack_require__(104);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
-  var _AlertPopup = __webpack_require__(10);
+  var _AlertPopup = __webpack_require__(11);
 
   var _AlertPopup2 = _interopRequireDefault(_AlertPopup);
 
@@ -8250,7 +8250,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _classnames = __webpack_require__(11);
+  var _classnames = __webpack_require__(10);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -8260,15 +8260,15 @@ module.exports =
 
   __webpack_require__(105);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
-  var _AlertPopup = __webpack_require__(10);
+  var _AlertPopup = __webpack_require__(11);
 
   var _AlertPopup2 = _interopRequireDefault(_AlertPopup);
 
@@ -8509,7 +8509,7 @@ module.exports =
 
   __webpack_require__(106);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -8717,11 +8717,11 @@ module.exports =
 
   __webpack_require__(107);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
-  var _AlertPopup = __webpack_require__(10);
+  var _AlertPopup = __webpack_require__(11);
 
   var _AlertPopup2 = _interopRequireDefault(_AlertPopup);
 
@@ -8966,7 +8966,7 @@ module.exports =
 
   __webpack_require__(110);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
@@ -9097,6 +9097,10 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
+  var _classnames = __webpack_require__(10);
+
+  var _classnames2 = _interopRequireDefault(_classnames);
+
   var _reactIconsLibFaFacebook = __webpack_require__(165);
 
   var _reactIconsLibFaFacebook2 = _interopRequireDefault(_reactIconsLibFaFacebook);
@@ -9111,9 +9115,13 @@ module.exports =
 
   __webpack_require__(111);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
+
+  var _Link = __webpack_require__(3);
+
+  var _Link2 = _interopRequireDefault(_Link);
 
   var Footer = (function (_Component) {
     _inherits(Footer, _Component);
@@ -9165,6 +9173,19 @@ module.exports =
               _react2['default'].createElement(
                 'div',
                 { className: 'Footer-item' },
+                _react2['default'].createElement(
+                  'ul',
+                  { className: 'Footer-nav' },
+                  _react2['default'].createElement(
+                    'li',
+                    { className: 'Footer-nav-item' },
+                    _react2['default'].createElement(
+                      'a',
+                      { className: (0, _classnames2['default'])('Footer-nav-link', this.props.path === '/faq' ? 'active' : ''), href: '/faq', onClick: _Link2['default'].handleClick },
+                      'FAQ'
+                    )
+                  )
+                ),
                 _react2['default'].createElement(
                   'div',
                   { className: 'Footer-tel' },
@@ -9266,7 +9287,7 @@ module.exports =
 
   __webpack_require__(112);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
@@ -9299,7 +9320,7 @@ module.exports =
             { className: 'Body' },
             this.props.children
           ),
-          _react2['default'].createElement(_Footer2['default'], null)
+          _react2['default'].createElement(_Footer2['default'], { path: this.props.path })
         );
       }
     }], [{
@@ -9354,7 +9375,7 @@ module.exports =
 
   __webpack_require__(114);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -9585,7 +9606,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _classnames = __webpack_require__(11);
+  var _classnames = __webpack_require__(10);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -9593,7 +9614,7 @@ module.exports =
 
   __webpack_require__(116);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
@@ -9601,7 +9622,7 @@ module.exports =
 
   var _Logo2 = _interopRequireDefault(_Logo);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
@@ -9626,9 +9647,9 @@ module.exports =
       value: function render() {
         var accountText;
         if (_coreUtil2['default'].isLoggedInBackend()) {
-          accountText = 'Dashboard';
+          accountText = 'DASHBOARD';
         } else {
-          accountText = 'Login';
+          accountText = 'LOGIN';
         }
         return _react2['default'].createElement(
           'div',
@@ -9641,26 +9662,8 @@ module.exports =
               { className: 'Navigation-item' },
               _react2['default'].createElement(
                 'a',
-                { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/' ? 'active' : ''), href: '/', onClick: _Link2['default'].handleClick },
-                'Home'
-              )
-            ),
-            _react2['default'].createElement(
-              'li',
-              { className: 'Navigation-item' },
-              _react2['default'].createElement(
-                'a',
                 { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/about' ? 'active' : ''), href: '/about', onClick: _Link2['default'].handleClick },
-                'About'
-              )
-            ),
-            _react2['default'].createElement(
-              'li',
-              { className: 'Navigation-item' },
-              _react2['default'].createElement(
-                'a',
-                { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/faq' ? 'active' : ''), href: '/faq', onClick: _Link2['default'].handleClick },
-                'FAQ'
+                'ABOUT'
               )
             ),
             _react2['default'].createElement(
@@ -9669,7 +9672,16 @@ module.exports =
               _react2['default'].createElement(
                 'a',
                 { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/services' ? 'active' : ''), href: '/services', onClick: _Link2['default'].handleClick },
-                'Services'
+                'SERVICES'
+              )
+            ),
+            _react2['default'].createElement(
+              'li',
+              { className: 'Navigation-item' },
+              _react2['default'].createElement(
+                'a',
+                { className: 'Navigation-link', href: 'http://smarteredu.org/smarteredu/institution/smarter-edx/eBeecare/' },
+                'eBeeACADEMY'
               )
             ),
             _react2['default'].createElement(
@@ -9678,7 +9690,7 @@ module.exports =
               _react2['default'].createElement(
                 'a',
                 { className: 'Navigation-link Navigation-link-highlight', href: _coreUtil2['default'].partners },
-                'Become a Partner'
+                'BECOME A PARTNER'
               )
             ),
             _react2['default'].createElement(
@@ -9687,7 +9699,7 @@ module.exports =
               _react2['default'].createElement(
                 'a',
                 { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/booking-manage' ? 'active' : ''), href: '/booking-manage', onClick: _Link2['default'].handleClick },
-                'Manage Booking'
+                'MANAGE BOOKING'
               )
             ),
             _react2['default'].createElement(
@@ -9715,26 +9727,8 @@ module.exports =
                   { className: 'Navigation-item' },
                   _react2['default'].createElement(
                     'a',
-                    { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/' ? 'active' : ''), href: '/', onClick: _Link2['default'].handleClick },
-                    'Home'
-                  )
-                ),
-                _react2['default'].createElement(
-                  'li',
-                  { className: 'Navigation-item' },
-                  _react2['default'].createElement(
-                    'a',
                     { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/about' ? 'active' : ''), href: '/about', onClick: _Link2['default'].handleClick },
-                    'About'
-                  )
-                ),
-                _react2['default'].createElement(
-                  'li',
-                  { className: 'Navigation-item' },
-                  _react2['default'].createElement(
-                    'a',
-                    { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/faq' ? 'active' : ''), href: '/faq', onClick: _Link2['default'].handleClick },
-                    'FAQ'
+                    'ABOUT'
                   )
                 ),
                 _react2['default'].createElement(
@@ -9743,7 +9737,16 @@ module.exports =
                   _react2['default'].createElement(
                     'a',
                     { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/services' ? 'active' : ''), href: '/services', onClick: _Link2['default'].handleClick },
-                    'Services'
+                    'SERVICES'
+                  )
+                ),
+                _react2['default'].createElement(
+                  'li',
+                  { className: 'Navigation-item' },
+                  _react2['default'].createElement(
+                    'a',
+                    { className: 'Navigation-link', href: 'http://smarteredu.org/smarteredu/institution/smarter-edx/eBeecare/' },
+                    'eBeeACADEMY'
                   )
                 ),
                 _react2['default'].createElement(
@@ -9752,7 +9755,7 @@ module.exports =
                   _react2['default'].createElement(
                     'a',
                     { className: 'Navigation-link Navigation-link-highlight', href: _coreUtil2['default'].partners },
-                    'Become a Partner'
+                    'BECOME A PARTNER'
                   )
                 ),
                 _react2['default'].createElement(
@@ -9761,7 +9764,7 @@ module.exports =
                   _react2['default'].createElement(
                     'a',
                     { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/booking-manage' ? 'active' : ''), href: '/booking-manage', onClick: _Link2['default'].handleClick },
-                    'Manage Booking'
+                    'MANAGE BOOKING'
                   )
                 ),
                 _react2['default'].createElement(
@@ -9810,7 +9813,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _classnames = __webpack_require__(11);
+  var _classnames = __webpack_require__(10);
 
   var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -9826,15 +9829,15 @@ module.exports =
 
   __webpack_require__(119);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
-  var _Link = __webpack_require__(4);
+  var _Link = __webpack_require__(3);
 
   var _Link2 = _interopRequireDefault(_Link);
 
-  var _AlertPopup = __webpack_require__(10);
+  var _AlertPopup = __webpack_require__(11);
 
   var _AlertPopup2 = _interopRequireDefault(_AlertPopup);
 
@@ -10050,7 +10053,7 @@ module.exports =
 
   __webpack_require__(120);
 
-  var _Container = __webpack_require__(3);
+  var _Container = __webpack_require__(4);
 
   var _Container2 = _interopRequireDefault(_Container);
 
@@ -10360,7 +10363,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsContainerContainer = __webpack_require__(3);
+  var _componentsContainerContainer = __webpack_require__(4);
 
   var _componentsContainerContainer2 = _interopRequireDefault(_componentsContainerContainer);
 
@@ -10959,7 +10962,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsContainerContainer = __webpack_require__(3);
+  var _componentsContainerContainer = __webpack_require__(4);
 
   var _componentsContainerContainer2 = _interopRequireDefault(_componentsContainerContainer);
 
@@ -11024,7 +11027,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsContainerContainer = __webpack_require__(3);
+  var _componentsContainerContainer = __webpack_require__(4);
 
   var _componentsContainerContainer2 = _interopRequireDefault(_componentsContainerContainer);
 
@@ -11226,7 +11229,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsContainerContainer = __webpack_require__(3);
+  var _componentsContainerContainer = __webpack_require__(4);
 
   var _componentsContainerContainer2 = _interopRequireDefault(_componentsContainerContainer);
 
@@ -11470,7 +11473,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsContainerContainer = __webpack_require__(3);
+  var _componentsContainerContainer = __webpack_require__(4);
 
   var _componentsContainerContainer2 = _interopRequireDefault(_componentsContainerContainer);
 
@@ -12302,7 +12305,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsContainerContainer = __webpack_require__(3);
+  var _componentsContainerContainer = __webpack_require__(4);
 
   var _componentsContainerContainer2 = _interopRequireDefault(_componentsContainerContainer);
 
@@ -13350,7 +13353,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _componentsContainerContainer = __webpack_require__(3);
+  var _componentsContainerContainer = __webpack_require__(4);
 
   var _componentsContainerContainer2 = _interopRequireDefault(_componentsContainerContainer);
 
@@ -14471,7 +14474,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n.Footer {\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.Footer {\n  margin: 0 auto;\n  padding: 40px 0 20px 0;\n  color: #ffffff;\n  background-color: #fdbc1d;\n  font-weight: 600;\n  font-size: 15px;\n}\n\n.Footer a {\n  color: #ffffff;\n}\n\n.Footer .Footer-list {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin: 0 0 5em 0;\n  list-style: none;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: start;\n  -webkit-align-items: flex-start;\n      -ms-flex-align: start;\n          align-items: flex-start;\n}\n\n.Footer .Footer-list .Footer-item {\n  padding: 0 0.5em;\n}\n\n.Footer .Footer-list .Footer-item .Footer-maps-button {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  max-height: 32px;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  background-color: #eee;\n}\n\n.Footer .Footer-list .Footer-item .Footer-maps-button .Footer-maps-label {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  text-align: center;\n  line-height: 0.75em;\n  padding: 5px;\n  color: #444;\n}\n\n.Footer .Footer-list .Footer-item .Footer-maps-button:hover {\n  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);\n  -ms-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);\n  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);\n}\n\n.Footer .Footer-list .Footer-item .Footer-social-media {\n  color: #fbeaaa;\n  margin-left: 10px\n}\n\n.Footer .Footer-list .Footer-item .Footer-social-media:hover {\n  color: #fff;\n}\n\n.Footer .Footer-list .Footer-item .Footer-tel {\n  font-size: 25px;\n  font-weight: bold;\n}\n\n@media (max-width: 768px) {\n  .Footer .Footer-list {\n    -webkit-flex-wrap: wrap;\n        -ms-flex-wrap: wrap;\n            flex-wrap: wrap;\n  }\n    }\n", ""]);
+  exports.push([module.id, "/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n.Footer {\n  text-rendering: optimizeLegibility;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.Footer {\n  margin: 0 auto;\n  padding: 40px 0 20px 0;\n  color: #ffffff;\n  background-color: #fdbc1d;\n  font-weight: 600;\n  font-size: 15px;\n}\n\n.Footer a {\n  color: #ffffff;\n}\n\n.Footer .Footer-list {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin: 0 0 5em 0;\n  list-style: none;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: start;\n  -webkit-align-items: flex-start;\n      -ms-flex-align: start;\n          align-items: flex-start;\n}\n\n.Footer .Footer-list .Footer-item {\n  padding: 0 0.5em;\n}\n\n.Footer .Footer-list .Footer-item .Footer-nav {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: column;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  -webkit-box-pack: end;\n  -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  text-align: left;\n}\n\n.Footer .Footer-list .Footer-item .Footer-nav .Footer-nav-item {\n  padding: 0 0.5em;\n  width: 100%;\n}\n\n.Footer .Footer-list .Footer-item .Footer-nav .Footer-nav-item .Footer-nav-link {\n  display: inline-block;\n  float: left;\n  padding: 0.5em 0;\n  color: #ffffff;\n  font-size: 15px;\n  text-decoration: none;\n  text-transform: uppercase;\n  cursor: pointer\n}\n\n.Footer .Footer-list .Footer-item .Footer-nav .Footer-nav-item .Footer-nav-link:hover {\n  color: #444;\n  text-decoration: none;\n}\n\n.Footer .Footer-list .Footer-item .Footer-nav .Footer-nav-item .Footer-nav-link.active {\n  color: #f78d00;\n  font-weight: bold;\n  cursor: default;\n}\n\n.Footer .Footer-list .Footer-item .Footer-nav .Footer-nav-item .Footer-nav-link-highlight {\n  background-color: #f78d00;\n  color: #fff;\n}\n\n.Footer .Footer-list .Footer-item .Footer-nav .Footer-nav-item .Footer-nav-link-highlight:hover {\n  border: none;\n  background-color: #fdbc1d;\n  color: #fff;\n}\n\n.Footer .Footer-list .Footer-item .Footer-maps-button {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  max-height: 32px;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  background-color: #eee;\n}\n\n.Footer .Footer-list .Footer-item .Footer-maps-button .Footer-maps-label {\n  -webkit-box-flex: 1;\n  -webkit-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  text-align: center;\n  line-height: 0.75em;\n  padding: 5px;\n  color: #444;\n}\n\n.Footer .Footer-list .Footer-item .Footer-maps-button:hover {\n  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);\n  -ms-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);\n  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);\n}\n\n.Footer .Footer-list .Footer-item .Footer-social-media {\n  color: #fbeaaa;\n  margin-left: 10px\n}\n\n.Footer .Footer-list .Footer-item .Footer-social-media:hover {\n  color: #fff;\n}\n\n.Footer .Footer-list .Footer-item .Footer-tel {\n  font-size: 25px;\n  font-weight: bold;\n}\n\n@media (max-width: 768px) {\n  .Footer .Footer-list .Footer-item .Footer-nav .Footer-nav-item .Footer-nav-link {\n    font-size: 18px;\n  }\n            }\n\n@media (max-width: 768px) {\n  .Footer .Footer-list {\n    -webkit-flex-wrap: wrap;\n        -ms-flex-wrap: wrap;\n            flex-wrap: wrap;\n  }\n    }\n", ""]);
 
   // exports
 
@@ -14541,7 +14544,7 @@ module.exports =
 
 
   // module
-  exports.push([module.id, "/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.NavWrapper {\n  background-color: #FFF;\n  position: relative\n}\n\n@media (max-width: 768px) {\n\n  .NavWrapper {\n    z-index: 2;\n    position: fixed;\n    height: 57px;\n    top: 0;\n    left: 0;\n    right: 0;\n    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);\n    -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);\n    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)\n  }\n  }\n\n.Navigation-wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin: 0;\n  list-style: none;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\n.Navigation-wrapper .Navigation {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  -webkit-box-pack: end;\n  -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center\n}\n\n@media (max-width: 1200px) {\n\n  .Navigation-wrapper .Navigation {\n    -webkit-flex-wrap: wrap;\n        -ms-flex-wrap: wrap;\n            flex-wrap: wrap\n  }\n    }\n\n@media (max-width: 768px) {\n\n  .Navigation-wrapper .Navigation {\n    display: none\n  }\n    }\n\n.Navigation-item {\n  padding: 0 0.5em;\n}\n\n.Navigation-item .Navigation-link {\n  display: inline-block;\n  padding: 0.5em 1em;\n  color: #444;\n  font-size: 15px;\n  text-decoration: none;\n  text-transform: uppercase;\n  cursor: pointer\n}\n\n.Navigation-item .Navigation-link:hover {\n  border-bottom: 3px solid #444;\n  color: #444;\n  text-decoration: none\n}\n\n.Navigation-item .Navigation-link.active {\n  border-bottom: 3px solid #fdbc1d;\n  color: #fdbc1d;\n  font-weight: bold\n}\n\n.Navigation-item .Navigation-link-highlight {\n  background-color: #f78d00;\n  color: #fff;\n  //: 1px solid #f78d00;\n  //: 5px\n}\n\n.Navigation-item .Navigation-link-highlight:hover {\n  //: 1px solid #fdbc1d;\n  border: none;\n  background-color: #fdbc1d;\n  color: #fff\n}\n\n@media (max-width: 768px) {\n\n  .Navigation-item .Navigation-link {\n    font-size: 18px\n  }\n    }\n\n/* Position and sizing of burger button */\n.bm-burger-button {\n  position: fixed;\n  width: 24px;\n  height: 20px;\n  right: 18.5px;\n  top: 18.5px\n}\n@media (min-width: 768px) {\n\n  .bm-burger-button {\n    display: none\n  }\n  }\n\n/* Color/shape of burger icon bars */\n.bm-burger-bars {\n  background: #fdbc1d;\n  height: 10% !important;\n}\n\n/* Position and sizing of clickable cross button */\n.bm-cross-button {\n  height: 24px;\n  width: 24px;\n}\n\n/* Color/shape of close button cross */\n.bm-cross {\n  background: #f78d00;\n}\n\n/* General sidebar styles */\n.bm-menu {\n  background: #ffffff;\n  padding: 2.5em 1em 0;\n  font-size: 1.15em;\n}\n\n/* Morph shape necessary with bubble or elastic */\n.bm-morph-shape {\n  fill: #373a47;\n}\n\n/* Wrapper for item list */\n.bm-item-list {\n  color: #b8b7ad;\n  // padding: 0.8em;\n}\n.bm-item-list .Navigation-item {\n  padding: 0;\n}\n.bm-item-list .Navigation-item .Navigation-link {}\n.bm-item-list .Navigation-item .Navigation-link.active, .bm-item-list .Navigation-item .Navigation-link:hover {\n  border-bottom: none\n}\n\n/* Styling of overlay */\n.bm-overlay {\n  background: rgba(0, 0, 0, 0.5) !important;\n}", ""]);
+  exports.push([module.id, "/*\n * Scaffolding\n * -------------------------------------------------------------------------- */\n\n/*\n * Typography\n * -------------------------------------------------------------------------- */\n\n/*\n * Media queries breakpoints\n * -------------------------------------------------------------------------- */\n\n.NavWrapper {\n  background-color: #FFF;\n  position: relative\n}\n\n@media (max-width: 768px) {\n\n  .NavWrapper {\n    z-index: 2;\n    position: fixed;\n    height: 57px;\n    top: 0;\n    left: 0;\n    right: 0;\n    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);\n    -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);\n    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25)\n  }\n  }\n\n.Navigation-wrapper {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin: 0;\n  list-style: none;\n  -webkit-box-pack: justify;\n  -webkit-justify-content: space-between;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\n.Navigation-wrapper .Navigation {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n  -webkit-flex-direction: row;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  -webkit-box-pack: end;\n  -webkit-justify-content: flex-end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center\n}\n\n@media (max-width: 1200px) {\n\n  .Navigation-wrapper .Navigation {\n    -webkit-flex-wrap: wrap;\n        -ms-flex-wrap: wrap;\n            flex-wrap: wrap\n  }\n    }\n\n@media (max-width: 768px) {\n\n  .Navigation-wrapper .Navigation {\n    display: none\n  }\n    }\n\n.Navigation-item {\n  padding: 0 0.5em;\n}\n\n.Navigation-item .Navigation-link {\n  display: inline-block;\n  padding: 0.5em 1em;\n  color: #444;\n  font-size: 15px;\n  text-decoration: none;\n  cursor: pointer\n}\n\n.Navigation-item .Navigation-link:hover {\n  border-bottom: 3px solid #444;\n  color: #444;\n  text-decoration: none\n}\n\n.Navigation-item .Navigation-link.active {\n  border-bottom: 3px solid #fdbc1d;\n  color: #fdbc1d;\n  font-weight: bold\n}\n\n.Navigation-item .Navigation-link-highlight {\n  background-color: #f78d00;\n  color: #fff;\n  //: 1px solid #f78d00;\n  //: 5px\n}\n\n.Navigation-item .Navigation-link-highlight:hover {\n  //: 1px solid #fdbc1d;\n  border: none;\n  background-color: #fdbc1d;\n  color: #fff\n}\n\n@media (max-width: 768px) {\n\n  .Navigation-item .Navigation-link {\n    font-size: 18px\n  }\n    }\n\n/* Position and sizing of burger button */\n.bm-burger-button {\n  position: fixed;\n  width: 24px;\n  height: 20px;\n  right: 18.5px;\n  top: 18.5px\n}\n@media (min-width: 768px) {\n\n  .bm-burger-button {\n    display: none\n  }\n  }\n\n/* Color/shape of burger icon bars */\n.bm-burger-bars {\n  background: #fdbc1d;\n  height: 10% !important;\n}\n\n/* Position and sizing of clickable cross button */\n.bm-cross-button {\n  height: 24px;\n  width: 24px;\n}\n\n/* Color/shape of close button cross */\n.bm-cross {\n  background: #f78d00;\n}\n\n/* General sidebar styles */\n.bm-menu {\n  background: #ffffff;\n  padding: 2.5em 1em 0;\n  font-size: 1.15em;\n}\n\n/* Morph shape necessary with bubble or elastic */\n.bm-morph-shape {\n  fill: #373a47;\n}\n\n/* Wrapper for item list */\n.bm-item-list {\n  color: #b8b7ad;\n  // padding: 0.8em;\n}\n.bm-item-list .Navigation-item {\n  padding: 0;\n}\n.bm-item-list .Navigation-item .Navigation-link {}\n.bm-item-list .Navigation-item .Navigation-link.active, .bm-item-list .Navigation-item .Navigation-link:hover {\n  border-bottom: none\n}\n\n/* Styling of overlay */\n.bm-overlay {\n  background: rgba(0, 0, 0, 0.5) !important;\n}\n", ""]);
 
   // exports
 
