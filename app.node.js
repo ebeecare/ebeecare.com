@@ -9181,8 +9181,8 @@ module.exports =
                     { className: 'Footer-nav-item' },
                     _react2['default'].createElement(
                       'a',
-                      { className: (0, _classnames2['default'])('Footer-nav-link', this.props.path === '/faq' ? 'active' : ''), href: '/faq', onClick: _Link2['default'].handleClick },
-                      'FAQ'
+                      { className: 'Navigation-link', href: 'http://smarteredu.org/smarteredu/institution/smarter-edx/eBeecare/' },
+                      'Learn@eBeeACADEMY'
                     )
                   )
                 ),
@@ -9684,8 +9684,8 @@ module.exports =
               { className: 'Navigation-item' },
               _react2['default'].createElement(
                 'a',
-                { className: 'Navigation-link', href: 'http://smarteredu.org/smarteredu/institution/smarter-edx/eBeecare/' },
-                'eBeeACADEMY'
+                { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/faq' ? 'active' : ''), href: '/faq', onClick: _Link2['default'].handleClick },
+                'FAQ'
               )
             ),
             _react2['default'].createElement(
@@ -9749,8 +9749,8 @@ module.exports =
                   { className: 'Navigation-item' },
                   _react2['default'].createElement(
                     'a',
-                    { className: 'Navigation-link', href: 'http://smarteredu.org/smarteredu/institution/smarter-edx/eBeecare/' },
-                    'eBeeACADEMY'
+                    { className: (0, _classnames2['default'])('Navigation-link', this.props.path === '/faq' ? 'active' : ''), href: '/faq', onClick: _Link2['default'].handleClick },
+                    'FAQ'
                   )
                 ),
                 _react2['default'].createElement(
