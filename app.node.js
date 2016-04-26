@@ -9552,6 +9552,10 @@ module.exports =
 
   __webpack_require__(115);
 
+  var _Link = __webpack_require__(3);
+
+  var _Link2 = _interopRequireDefault(_Link);
+
   var _default = (function (_Component) {
     _inherits(_default, _Component);
 
@@ -9569,7 +9573,7 @@ module.exports =
           { className: 'Logo' },
           _react2['default'].createElement(
             'a',
-            { href: '/' },
+            { href: '/', onClick: _Link2['default'].handleClick },
             _react2['default'].createElement('img', { src: __webpack_require__(146) })
           )
         );
