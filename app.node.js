@@ -7327,7 +7327,7 @@ module.exports =
                 _react2['default'].createElement(
                   'div',
                   { className: 'TableRowItem3' },
-                  _react2['default'].createElement('input', { type: 'text', id: 'username', name: 'username', valueLink: (0, _reactLinkState2['default'])(this, 'username'), placeholder: 'Name*', maxLength: '50', required: true })
+                  _react2['default'].createElement('input', { type: 'text', id: 'fullName', name: 'fullName', valueLink: (0, _reactLinkState2['default'])(this, 'fullName'), placeholder: 'Name*', maxLength: '50', required: true })
                 )
               ),
               _react2['default'].createElement(
@@ -7375,7 +7375,7 @@ module.exports =
               _react2['default'].createElement(
                 'div',
                 { className: 'TableRowItem3' },
-                this.props.user.username
+                this.props.user.fullName
               )
             ),
             _react2['default'].createElement(
@@ -7891,7 +7891,7 @@ module.exports =
         switch (entity) {
           case 'user':
             this.setState({
-              username: this.props.user.username,
+              fullName: this.props.user.fullName,
 
               mobilePhone: this.props.user.mobilePhone,
 
@@ -8110,7 +8110,7 @@ module.exports =
       value: function _onCheckedPatient(event) {
         if (event.target.checked === true) {
           this.setState({
-            fullName: this.props.user.username
+            fullName: this.props.user.fullName
           });
         } else {
           this.setState({
