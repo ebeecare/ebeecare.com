@@ -4698,12 +4698,12 @@ module.exports =
             _react2['default'].createElement(
               'div',
               null,
-              this.props.booking['case'] && this.props.booking['case'].addresses && this.props.booking['case'].addresses[0] && this.props.booking['case'].addresses[0].address
+              this.props.booking && this.props.booking['case'] && this.props.booking['case'].addresses && this.props.booking['case'].addresses[0] && this.props.booking['case'].addresses[0].address
             ),
             _react2['default'].createElement(
               'div',
               null,
-              this.props.booking['case'] && this.props.booking['case'].addresses && this.props.booking['case'].addresses[0] && this.props.booking['case'].addresses[0].unitNumber
+              this.props.booking && this.props.booking['case'] && this.props.booking['case'].addresses && this.props.booking['case'].addresses[0] && this.props.booking['case'].addresses[0].unitNumber
             )
           );
         }
