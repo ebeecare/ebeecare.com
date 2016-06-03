@@ -4543,7 +4543,7 @@ module.exports =
                 _react2['default'].createElement(
                   'div',
                   { className: 'TableRowItem3' },
-                  _react2['default'].createElement(_reactDatepicker2['default'], { selected: (0, _moment2['default'])(this.props.booking.patient_dob), maxDate: (0, _moment2['default'])(), dateFormat: 'YYYY-MM-DD', showYearDropdown: true, onChange: this._onSelectDob.bind(this), placeholderText: 'Date of Birth* (Y-M-D)' })
+                  _react2['default'].createElement(_reactDatepicker2['default'], { selected: this.props.booking && this.props.booking.patient_dob && (0, _moment2['default'])(this.props.booking.patient_dob), maxDate: (0, _moment2['default'])(), dateFormat: 'YYYY-MM-DD', showYearDropdown: true, onChange: this._onSelectDob.bind(this), placeholderText: 'Date of Birth* (Y-M-D)' })
                 )
               ),
               _react2['default'].createElement(
@@ -4619,7 +4619,7 @@ module.exports =
               _react2['default'].createElement(
                 'div',
                 { className: 'TableRowItem3' },
-                (0, _moment2['default'])(this.props.booking.patient_dob, 'YYYY-MM-DD').format('ll')
+                this.props.booking && this.props.booking.patient_dob && (0, _moment2['default'])(this.props.booking.patient_dob, 'YYYY-MM-DD').format('ll')
               )
             )
           );
