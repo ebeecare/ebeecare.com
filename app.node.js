@@ -4724,7 +4724,7 @@ module.exports =
             null,
             _react2['default'].createElement(
               _reactLoader2['default'],
-              { className: 'spinner', loaded: this.props.booking.id ? true : false },
+              { className: 'spinner', loaded: this.props.booking && this.props.booking.id ? true : false },
               _react2['default'].createElement(
                 'div',
                 { className: 'BookingConfirmationWrapper' },
